@@ -11,37 +11,37 @@ const LoginPage = () => {
   return (
     <div className="flex flex-col md:flex-row h-screen">
       <Nav />
-      {/* Left (Motivational Write-up with Gradient Background) */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-blue-400 text-white p-8 animate-fade">
-        <div className="text-center max-w-lg space-y-6">
+      {/* Left Section */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-blue-400 text-white p-6 sm:p-8 animate-fade">
+        <div className="text-center max-w-lg space-y-4 sm:space-y-6">
           {/* Icon or Illustration */}
-          <div className="text-6xl">🌟</div>
+          <div className="text-5xl sm:text-6xl">🌟</div>
 
           {/* Headline */}
-          <h1 className="text-5xl font-extrabold font-poppins mb-4">Welcome Back!</h1>
+          <h1 className="text-4xl sm:text-5xl font-extrabold font-poppins mb-4">Welcome Back!</h1>
 
           {/* Subheading */}
-          <p className="text-lg font-lato leading-relaxed">
+          <p className="text-base sm:text-lg font-lato leading-relaxed">
             Reconnect with your goals and explore exciting opportunities. Let’s achieve greatness together!
           </p>
         </div>
       </div>
 
-      {/* Right (Form with Gradient Background) */}
-      <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-br from-blue-400 to-teal-300 p-6 animate-fade">
-        <div className="flex flex-col gap-4 w-3/4 bg-white rounded-lg p-8 shadow-lg">
-          <label className="flex items-center gap-2">
-            <p className="w-1/3 font-lato">Email:</p>
+      {/* Right Section (Form) */}
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-br from-blue-400 to-teal-300 p-4 sm:p-6 animate-fade">
+        <div className="flex flex-col gap-4 w-full max-w-sm bg-white rounded-lg p-6 sm:p-8 shadow-lg">
+          <label className="flex flex-col gap-2">
+            <span className="font-lato">Email:</span>
             <input
               type="email"
               placeholder="you@example.com"
               className="border rounded-full p-2 w-full focus:outline-blue-500"
             />
           </label>
-          <label className="flex items-center gap-2 relative">
-            <p className="w-1/3 font-lato">Password:</p>
+          <label className="flex flex-col gap-2 relative">
+            <span className="font-lato">Password:</span>
             <input
-              type={showPassword ? "text" : "password"}
+              type={showPassword ? 'text' : 'password'}
               placeholder="Enter your password"
               minLength={8}
               className="border rounded-full p-2 w-full focus:outline-blue-500"
@@ -49,25 +49,25 @@ const LoginPage = () => {
             <button
               type="button"
               onClick={togglePasswordVisibility}
-              className="absolute right-4 text-gray-500 hover:text-blue-500 focus:outline-none"
+              className="absolute right-4 top-9 text-gray-500 hover:text-blue-500 focus:outline-none"
             >
-              {showPassword ? "👁️" : "👁️‍🗨️"}
+              {showPassword ? '👁️' : '👁️‍🗨️'}
             </button>
           </label>
 
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
             <label className="flex items-center gap-2 font-lato">
               <input type="checkbox" className="accent-blue-500" />
               <span>Remember me</span>
             </label>
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-blue-600 hover:underline text-sm">
               Forgotten password?
             </a>
           </div>
 
           <button
             type="submit"
-            className="bg-[#0766ff] text-white p-2 rounded-full hover:bg-[rgb(79,141,255)] hover:shadow-lg transform hover:scale-105 transition-transform font-poppins"
+            className="bg-[#0766ff] text-white p-3 rounded-full hover:bg-[rgb(79,141,255)] hover:shadow-lg transform hover:scale-105 transition-transform font-poppins"
           >
             Login
           </button>
