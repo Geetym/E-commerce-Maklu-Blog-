@@ -9,6 +9,7 @@ import Endofseason from './component/Endofseason';
 import Castronews from './component/Castronews';
 import CustomerBenefits from './component/Customerbenefits';
 import Footersection from './component/Footersection';
+import MastercardPay from './component/Mastercardpay';
 
 const App = () => {
   return (
@@ -31,6 +32,8 @@ const App = () => {
         <Route path="/signuppage" element={<SignUpPage />} />
         <Route path="/loginpage" element={<LoginPage />} />
         <Route path='/viewallproducts' element={<Allproduct />} />
+        <Route path='/mastercard' element={<MastercardPay />} />
+        
       </Routes>
     </>
   );
