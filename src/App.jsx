@@ -39,6 +39,7 @@ const App = () => {
         <Route path='/vervecard' element={<Vervecardplay />} />
         <Route path='/visacard' element={<Visacard />} />
         <Route path='/americanexpresscard' element={<Americanexpress />} />
+        
       </Routes>
     </>
   );
