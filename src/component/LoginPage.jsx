@@ -9,7 +9,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <Nav />
       {/* Left Section */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-blue-400 text-white p-6 sm:p-8 animate-fade">
@@ -28,7 +28,7 @@ const LoginPage = () => {
       </div>
 
       {/* Right Section (Form) */}
-      <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-br from-blue-400 to-teal-300 p-4 sm:p-6 animate-fade">
+      <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-br from-blue-400 to-teal-300 p-4 sm:p-6 overflow-y-auto">
         <div className="flex flex-col gap-4 w-full max-w-sm bg-white rounded-lg p-6 sm:p-8 shadow-lg">
           <label className="flex flex-col gap-2">
             <span className="font-lato">Email:</span>
