@@ -2,7 +2,7 @@ import React from 'react';
 
 const CustomerBenefits = () => {
   return (
-    <div className="flex flex-wrap justify-between items-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm mt-32">
+    <div className="flex flex-wrap justify-between items-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm mt-36">
       {/* Free Shipping */}
       <div className="flex flex-col items-center text-center w-full sm:w-1/2 lg:w-1/4 px-4 mb-6 sm:mb-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12 text-gray-600">
