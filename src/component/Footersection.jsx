@@ -124,7 +124,7 @@ const Footersection = () => {
 
           {/* Copyright Text */}
           <p className="text-base text-[rgb(132,132,132)] font-medium text-center sm:text-right">
-            Maklu Blog © 2020 All Right Reserved
+            Maklu Blog © 2024 All Right Reserved
           </p>
         </div>
       </div>
