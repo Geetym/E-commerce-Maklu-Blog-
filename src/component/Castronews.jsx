@@ -2,7 +2,7 @@ import React from 'react';
 
 const Castronews = () => {
   return (
-    <div className="bg-gray-50 p-8">
+    <div className="bg-gray-50 p-8 mt-32">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800">Castro News</h1>
